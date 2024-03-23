@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PRAVEEN's PORTFOLIO</title>
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" class="logo"><span>P</span><span>B</span></a>
+    
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="project.html">Project</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="contacts.html">Contact</a></li>
+            </ul>
+            <div class="menu">
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+            </div>
+        </nav>
+    </header>
+
+
+    <section class="home">
+        <div class="home-text">
+            <span>Web Developer</span>
+            <h1>Praveen Balamurugan</h1>
+            <p>I'm a designer, illustrator and creator of courses, templates, wireframe kits and the occasionally useful side-project. </p>
+
+            <div class="main-btn">
+                <a href="PRAVEEN.pdf" download="Praveen's Resume" id="mybutton"  class="btn">
+                    Download CV
+                </a> 
+                <a href="images/Praveen.jpg" download="Praveen's Image" id="mybutton"  class="btn">
+                    Download Image
+                </a> 
+            </div>
+        </div>
+
+        <div class="home-img">
+            <img src="images/mypic.png">
+        </div>
+
+    </section>
+
+    <div class="share">
+        <p>Check out my:</p>
+
+        <div class="social">
+            <a href="https://www.linkedin.com/in/praveen-balamurugan-a40911176/"><i class='bx bxl-linkedin' ></i></a>
+            <a href="https://github.com/praveenbalamurugan999"><i class='bx bxl-github' ></i></a>
+        </div>
+        
+    </div>    
+</body>
+
+<script>
+    const menu = document.querySelector('.menu')
+    const menulist = document.querySelector('nav ul')
+    menu.addEventListener('click', ()=>{
+        menulist.classList.toggle('showmenu')
+    })
+
+</script>
+
+</html>
