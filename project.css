@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+*
+{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: "poppins", sans-serif;
+    
+}
+
+:root
+{
+    --bg-color: #1f1f21;
+    --text-color: #fff;
+    --main-color: #ffae00;
+    --big-font: 7rem;
+    --p-font: 1.1rem;
+
+}
+
+body
+{
+    background: var(--bg-color);
+    color: var(--text-color);
+    overflow-x: hidden;
+}
+
+header
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 15%;
+    background: transparent;
+    transition: all ease .45s;
+    margin-top: -20px;
+    text-decoration: none;
+    list-style: none;
+    transition: 2s;
+}
+
+nav
+{
+    font-size: 18px;
+    font-weight: bolder;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav li
+{
+    display: inline-block;
+    margin: 20px;
+}
+
+nav a
+{
+    text-decoration: none;
+    color: white;    
+}
+
+nav a:hover
+{
+    color: #ffae00;
+}
+
+.menu-line
+{
+    height: 3px;
+    width: 20px;
+    background-color: #ffae00;
+    margin-bottom: 3px;
+}
+
+.menu-line
+{
+    height: 3px;
+    width: 20px;
+    background-color: #ffae00;
+    margin-bottom: 3px;
+}
+
+.menu
+{
+    cursor: pointer;
+    display: none;
+}
+
+@media all and (max-width: 640px)
+{
+    nav
+    {
+        flex-direction: column;
+    }
+
+    nav li
+    {
+        display: block;
+        padding: 10px 0;
+    }
+    ul
+    {
+        text-align: center;
+        padding: 0;
+        display: none;
+    }
+
+    .menu
+    {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 25px;
+    }
+
+    .showmenu
+    {
+        display: block;
+    }
+
+}
+
+.qb, .calc, .qr, .age
+{
+    text-align: center;
+}
+
+.age h1
+{
+    text-underline-offset: 12px;
+}
+
+h1
+{
+    font-size: 30px;
+    color: whitesmoke;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 4px;
+}
+
+h1 span
+{
+    color: #ffae00;
+    font-size: 40px;
+}
+
+h2
+{
+    margin-top: 7px;
+    font-size: 25px;
+}
+
+p
+{
+    font-size: 18px;
+}
+
+button
+{
+    height: 30px;
+    width: 85px;
+    border-radius: 8px;
+    margin-top: 10px;
+    background-color: black;
+    color: #ffae00;
+    font-weight: bolder;
+}
+
+button:hover
+{
+    background-color: #ffae00;
+    color: #1f1f21;
+    cursor: pointer;
+}
+
+@media all and (max-width: 640px)
+{
+    h1
+    {
+        font-size: 25px;
+        color: whitesmoke;
+        text-decoration: underline;
+        text-underline-offset: 8px;
+        text-decoration-thickness: 4px;
+    }
+
+    h1 span
+    {
+        color: #ffae00;
+        font-size: 30px;
+    }
+
+    h2
+    {
+        font-size: 19px;
+        margin-top: 20px;
+    }
+
+    p
+    {
+        font-size: 17px;
+    }
+    
+}

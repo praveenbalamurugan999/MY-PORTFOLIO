@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+*
+{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: "poppins", sans-serif;
+    
+}
+
+:root
+{
+    --bg-color: #1f1f21;
+    --text-color: #fff;
+    --main-color: #ffae00;
+
+    --big-font: 7rem;
+    --p-font: 1.1rem;
+
+}
+
+body
+{
+    background: var(--bg-color);
+    color: var(--text-color);
+    overflow-x: hidden;
+}
+
+header
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 15%;
+    background: transparent;
+    transition: all ease .45s;
+    margin-top: -20px;
+    text-decoration: none;
+    list-style: none;
+    transition: 2s;
+}
+
+@media (max-width: 500px)
+{
+    :root
+    {
+        --big-font: 5rem;
+        --p-font: 15px;
+        transition: .2s;
+    }
+    .btn
+    {
+        padding: 9px 28px;
+    }
+}
+
+.inner
+{
+    padding-top: 20px;
+    margin-top: -100px;
+}
+
+.header1
+{
+    text-align: center;
+    color: #ffae00;
+    padding: 1rem;
+    position: relative;
+    margin-top: 50px;
+    font-size: 30px;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 5px;
+    text-decoration-color: white;
+}
+
+.header1:after
+{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+
+.container
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-gap: 1rem;
+    padding: 1rem 80px;
+    font-size: 1.2rem;
+}
+
+.skill-box
+{
+    padding: 1rem;
+    color: #ddd;
+    cursor: pointer;
+}
+
+.skill-box:hover > .skill-title::after, .skill-box:hover > .skill-title::before
+{
+    transform: translateY(-10px);
+}
+
+
+.skill-title
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    
+}
+
+.img
+{
+    width: 90px;
+    height: 90px;
+    position: relative;
+    border-radius: 45px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: -5s;
+}
+
+.skill-title h3
+{
+    color: #fff;
+    margin: 0.5rem;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 5px;
+    text-decoration-color: #ffae00;
+}
+
+.skill-icon
+{
+    width: 50px;
+    z-index: 2;
+}
+
+.skill-icon2
+{
+    width: 78px;
+    z-index: 2;
+}
+
+@media screen and (max-width: 990px) {
+    .container
+    {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2rem 50px;
+    }    
+}
+
+
+.header2
+{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 5px;
+    text-decoration-color: white;
+    color: #ffae00;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.bottom
+{
+    margin-bottom: 40px;
+}
+
+.container2
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 200px;
+    grid-gap: 1rem;
+    padding: 1rem 80px;
+    font-size: 1rem;
+}
+
+nav
+{
+    font-size: 18px;
+    font-weight: bolder;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav li
+{
+    display: inline-block;
+    margin: 20px;
+}
+
+nav a
+{
+    text-decoration: none;
+    color: white;    
+}
+
+nav a:hover
+{
+    color: #ffae00;
+}
+
+.menu-line
+{
+    height: 3px;
+    width: 20px;
+    background-color: #ffae00;
+    margin-bottom: 3px;
+}
+
+.menu-line
+{
+    height: 3px;
+    width: 20px;
+    background-color: #ffae00;
+    margin-bottom: 3px;
+}
+
+.menu
+{
+    cursor: pointer;
+    display: none;
+}
+
+@media all and (max-width: 640px)
+{
+    nav
+    {
+        flex-direction: column;
+    }
+
+    nav li
+    {
+        display: block;
+        padding: 10px 0;
+    }
+    ul
+    {
+        text-align: center;
+        padding: 0;
+        display: none;
+    }
+
+    .menu
+    {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 25px;
+    }
+
+    .showmenu
+    {
+        display: block;
+    }
+
+    .container2
+    {
+        margin-left: -10px;
+        padding: 80px;
+        font-size: 10px;
+        display: inline-block;
+        line-height: 3rem;
+        margin: 10px;
+        margin-top: -60px;
+    }
+}

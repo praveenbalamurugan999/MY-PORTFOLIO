@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+*
+{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: "poppins", sans-serif;
+}
+
+:root
+{
+    --bg-color: #1f1f21;
+    --text-color: #fff;
+    --main-color: #ffae00;
+
+    --big-font: 7rem;
+    --p-font: 1.1rem;
+
+}
+
+.service h1
+{
+    visibility: hidden;
+}
+
+body
+{
+    background: var(--bg-color);
+    color: var(--text-color);
+    
+}
+
+span
+{
+    color: #ffae00;
+}
+
+header
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 15%;
+    transition: all ease .45s;
+}
+
+.heading1
+{
+    font-size: 40px;
+    margin-left: 4%;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 5px;
+    margin-top: 150px;
+    margin-bottom: 5px;
+}
+
+.heading1 span
+{
+    color: #ffae00;
+    font-size: 50px;
+}
+
+.Technical-bars .bar
+{
+    margin-left: 8%;
+}
+
+.Technical-bars .bar .info
+{
+    margin-bottom: 25px;
+    margin-top: 40px;
+    font-size: 15px;
+
+}
+
+.Technical-bars .bar .info p
+{
+    font-size: 18px;
+}
+
+
+.Technical-bars .bar .info span
+{
+    font-weight: 700;
+    animation: showText .7s linear forwards;
+    opacity: 0;
+    color: #ffae00;
+}
+
+
+.Technical-bars .bar .newline
+{
+    position: relative;
+    border-radius: 10px;
+    width: 38%;
+    height: 5px;
+    background-color: white;
+    animation: animate 1s  cubic-bezier(1,0,0.5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+    
+}
+
+@keyframes animate{
+    100%{
+        transform: scaleX(1);
+    }
+}
+
+.Technical-bars .bar .newline span
+{
+    height: 100%;
+    background-color: #ffae00;
+    position: absolute;
+    border-radius: 10px;
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.newline.be span
+{
+    width: 78%;
+}
+
+.newline.hsc span
+{
+    width: 75.8%;
+}
+
+.newline.sslc span
+{
+    width: 89.4%;
+}
+
+
+.newline span::after
+{   
+    position: absolute; 
+    padding: 1px 8px; 
+    background-color: #1f1f21; 
+    color: #fff; 
+    font-size: 12px; 
+    border-radius: 3px;
+    top: -28px; 
+    right: -20px;
+    animation: showText 0.5s 1.5s linear forwards;
+}
+
+.newline.be span::after
+{
+    content: "78%";
+}
+
+.newline.hsc span::after
+{
+    content: "75.8%";
+}
+    
+.newline.sslc span::after
+{
+    content: "89.4%";
+}
+
+@keyframes showText{
+    100%{ 
+        opacity: 1;
+    }
+}
+
+.jobs
+{
+    margin-left: 50%;
+    margin-top: -490px;
+}
+
+.heading2
+{
+    
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 5px;
+    font-size: 22px;
+    text-align: center;
+    margin-top: -505px;
+}
+
+.heading2 span
+{
+    color: #ffae00;
+    font-size: 55px;
+
+}
+
+h3 span
+{
+    color: #ffae00;
+}
+
+.alljobs
+{
+    margin-top: 30px;
+    font-size: 13.8px;
+    margin-left: 90px;
+    margin-bottom: 10%;
+}
+
+.alljobs h2 span
+{
+    color: #ffae00;
+}
+
+.alljobs h1
+{
+    font-size: 24.5px;
+}
+
+.alljobs h3
+{
+    font-size: 20px;
+}
+
+
+nav
+{
+    font-size: 18px;
+    font-weight: bolder;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav li
+{
+    display: inline-block;
+    margin: 20px;
+}
+
+nav a
+{
+    text-decoration: none;
+    color: white;    
+}
+
+nav a:hover
+{
+    color: #ffae00;
+}
+
+.menu-line
+{
+    height: 3px;
+    width: 20px;
+    background-color: #ffae00;
+    margin-bottom: 3px;
+}
+
+.menu-line
+{
+    height: 3px;
+    width: 20px;
+    background-color: #ffae00;
+    margin-bottom: 3px;
+}
+
+.menu
+{
+    cursor: pointer;
+    display: none;
+}
+
+@media all and (max-width: 640px)
+{
+    nav
+    {
+        flex-direction: column;
+    }
+
+    nav li
+    {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .menu
+    {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 25px;
+    }
+
+    .showmenu
+    {
+        display: block;
+    }
+
+    header
+    {
+        padding: 11px 4%;
+        background: #1f1f21;
+    }
+    
+    ul
+    {
+        text-align: center;
+        padding: 0;
+        display: none;
+    }
+
+}
+
+@media all and (max-width: 640px)
+{
+    .heading1
+    {
+        font-size: 20px;
+        margin-left: 4%;
+        text-decoration: underline;
+        text-underline-offset: 10px;
+        text-decoration-thickness: 5px;
+        margin-top: 50px;
+        margin-bottom: 5px;
+    }
+
+    .heading1 span
+    {
+        color: #ffae00;
+        font-size: 30px;
+    }
+
+    .Technical-bars .bar
+    {
+        margin-left: 5%;
+    }
+
+    .Technical-bars .bar .info
+    {
+        margin-bottom: 25px;
+        margin-top: 40px;
+        font-size: 10px;
+
+    }
+
+    .Technical-bars .bar .info p
+    {
+        font-size: 13px;
+    }
+
+
+    .Technical-bars .bar .info span
+    {
+        font-weight: 700;
+        animation: showText .7s linear forwards;
+        color: #ffae00;
+    }
+
+
+    .Technical-bars .bar .newline
+    {
+        position: relative;
+        border-radius: 10px;
+        width: 80%;
+        height: 5px;
+        background-color: white;
+        animation: animate 1s  cubic-bezier(1,0,0.5,1) forwards;
+        transform: scaleX(0);
+        transform-origin: left;
+    }
+
+    .jobs
+    {
+        margin-left: -20%;
+        margin-top: -490px;
+    }
+
+    .heading2
+    {
+        
+        text-decoration: underline;
+        text-underline-offset: 10px;
+        text-decoration-thickness: 5px;
+        font-size: 10px;
+        text-align: center;
+        margin-top: 520px;
+        margin-left: 50px;
+    }
+
+    .heading2 span
+    {
+        color: #ffae00;
+        font-size: 32px;
+    }
+
+    h3 span
+    {
+        color: #ffae00;
+    }
+
+    .alljobs
+    {
+        margin-top: 30px;
+        font-size: 13.8px;
+        margin-left: 90px;
+    }
+
+    .alljobs h2 span
+    {
+        color: #ffae00;
+        font-size: 18px;
+    }
+
+    .alljobs h3
+    {
+        font-size: 18px;
+    }
+
+    .alljobs h1
+    {
+        font-size: 17px;
+    }
+
+    .service h1
+    {
+        visibility: visible;
+        font-size: 40px;
+        color: white;
+        margin-top: 150px;
+        margin-left: 100px;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+    }
+
+}

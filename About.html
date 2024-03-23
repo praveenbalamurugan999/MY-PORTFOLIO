@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="About.css">
+    <title>About</title>
+</head>
+
+<header>
+
+  <nav>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="project.html">Project</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="contacts.html">Contact</a></li>
+
+    </ul>
+    <div class="menu">
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+    </div>
+  </nav>
+
+</header>
+
+<body>
+  <div class="main">
+    
+    <div class="container">
+      <div class="title">
+        <h1>ABOUT ME</h1>
+        <h2>PRAVEEN<span>BALAMURUGAN</span></h2>
+      </div>
+      <p class="desc">I'm a designer, illustrator and creator of courses, templates, wireframe kits and the occasionally useful side-project.To obtain employment with a company that offers a positive atmosphere to learn and implement new skills and 
+        technologies for the betterment of the organization. I am seeking new opportunities to further enhance my skills and 
+        my goal is to continue expanding my knowledge and expertise in this field and deliver innovative solutions.</p>
+    </div>
+
+  </div>
+
+</body>
+
+<script>
+  const menu = document.querySelector('.menu')
+  const menulist = document.querySelector('nav ul')
+  menu.addEventListener('click', ()=>{
+      menulist.classList.toggle('showmenu')
+  })
+</script>
+
+</html>
